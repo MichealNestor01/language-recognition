@@ -13,8 +13,8 @@ from modules.displayUtils import printFeatures
 from modules.scalers import *
 
 def main():
-    train_features, train_languages = loadTrainingData()
-    test_features, test_languages = loadTestData()
+    train_features, train_languages = loadTrainingData("train")
+    test_features, test_languages = loadTestData("test")
 
     train_featuresScaled = scaleMinMax(train_features)
 
@@ -38,9 +38,9 @@ def main():
         batch_size=255,
         random_state=69,
         activation='logistic',
-        alpha=0.0001,
+        alpha=5,
         epsilon=1e-08,
-        hidden_layer_sizes=(300,),
+        hidden_layer_sizes=(100, ),
         learning_rate='adaptive',
         solver='adam'
     )

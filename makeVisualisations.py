@@ -1,4 +1,3 @@
-# Get the critical imports out of the way
 import matplotlib.pyplot as plt
 from matplotlib.colors import Normalize
 import pandas as pd
@@ -9,10 +8,7 @@ import os
 # matplotlib complains about the behaviour of librosa.display, so we'll ignore those warnings:
 import warnings; warnings.filterwarnings('ignore')
 
-
-
-################# Load Happy and Angry example of Actor 1 #####################################
-audio = soundfile.SoundFile('./dataset/archive(1)/train/train/de_f_5d2e7f30d69f2d1d86fd05f3bbe120c2.fragment3.noise7.flac') 
+audio = soundfile.SoundFile('./dataset/archive(1)/test/test/de_f_63f5b79c76cf5a1a4bbd1c40f54b166e.fragment1.flac') 
 waveform = audio.read(dtype="float32")
 sample_rate = audio.samplerate
 plt.figure(figsize=(15,30))
@@ -50,7 +46,6 @@ plt.subplot(5, 1, 5)
 librosa.display.specshow(chronogram, y_axis='chroma', x_axis='time')
 plt.colorbar(label='Relative intensity')
 plt.title('Chronogram')
-
 
 plt.tight_layout()
 plt.subplots_adjust(hspace=0.521, top=0.974, bottom=0.052)

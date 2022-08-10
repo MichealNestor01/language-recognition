@@ -61,6 +61,7 @@ Tuned alpha to 5 and hidden layer nodes to 100:
 # Confusion Matrices
 
 Best MLP model's results (alpha 5 and 1 hidden layer with 100 nodes)
+![confusion matrix](images/GoodMPLConfusionMatrix.png)
 
 MLP Tuned Confusion Matrix (better overall accuracy)
 ![confusion matrix](/images/MLPTunedConfusionMatrix.png)

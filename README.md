@@ -48,9 +48,9 @@ Unscaled Tuned MLP model's accuracy on test set is 77.40%
 # Confusion Matrices
 
 MLP Tuned Confusion Matrix (better overall accuracy)
-[confusion matrix](/static/MLPTunedConfusionMatrix.png)
+[confusion matrix](/images/MLPTunedConfusionMatrix.png)
 
 Random Forest Classifier Confusion Matrix (better English Recognition)
-[confusion matrix](/static/RFConfusionMatrix.png)
+[confusion matrix](/images/RFConfusionMatrix.png)
 
 It may be preferable to persue the Random Forest Classifier as it has better English recogniton.
